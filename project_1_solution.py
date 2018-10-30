@@ -9,7 +9,9 @@ Created on Sun Oct 21 11:02:35 2018
 filename = 'AbrahamLincoln.txt'
 
 def read_text(filename):
-    """ This function reads a text and returns a string """
+    """ This function reads a text and returns a string 
+    	This function is adapted from the HarvardX course - using python for research
+    """
     with open(filename, "r", encoding = "utf-8") as txt_file:
         text = txt_file.read()
         text = text.replace("\n"," ").replace("\r","")
@@ -21,7 +23,9 @@ text = read_text(filename)
 
 def count_words(text):
     """A function to count the number of times each word occurs in a text. All punctuation marks are skipped.
-    The function returns a dictionary object whose keys are the unique words and values are word counts"""
+    The function returns a dictionary object whose keys are the unique words and values are word counts
+    This function is adapted from the HarvardX course - using python for research
+    """
     text = text.lower()
     skips = [".", ",", ";",":","?","'",'"', '-', '_', '&', '*', '(', ')']
     for ch in skips:
