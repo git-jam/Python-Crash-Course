@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 # Data import and parameterization
 
-filename = 'project2_data.txt'
+filename = '../input_files/project2_data.txt'
 data_in = np.loadtxt(filename, skiprows = 1)   # 1st row contains column names
 
 t = data_in[:,0]
